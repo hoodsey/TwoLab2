@@ -1,17 +1,13 @@
 public class Main {
-    public static void main(String[] args) {
-
-        // объявление начальной суммы счёта
-        double AccountScore = 7890.99;
-        // объявление суммы пополнения
-        double Replenishment = 4569;
-        double Bonus = 0;
-        // проверка условия
-        if(Replenishment>1000){
-            Bonus = (int)Replenishment / 100;
+    public static void main(String[] args) {// объявление начальной суммы счёта
+        double accountScore = 7890.99;// объявление суммы пополнения
+        double replenishment = 4569;
+        double bonus = 0;// проверка условия
+        if (replenishment > 1000) {
+            bonus = (int) replenishment / 100;
         }
 
-        System.out.println(Bonus  + " - Количество бонусных рублей.");
-        System.out.println(AccountScore+Bonus  + " - итоговый счёт.");
+        System.out.println(bonus + " - Количество бонусных рублей.");
+        System.out.println(accountScore + bonus + " - итоговый счёт.");
     }
 }
